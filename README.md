@@ -61,7 +61,7 @@
 
 ## Screenshots:
 
-<img width="929" alt="2021-10-22 (2)" src="https://user-images.githubusercontent.com/86667443/138535981-adf4fdac-f1c0-41a6-ac69-2b58f6d3e5a6.png">
+![Team view](https://user-images.githubusercontent.com/86667443/138561909-1fb579c7-95a7-40d7-9ca6-40ed61881f23.png)
 <img width="942" alt="newplayerform" src="https://user-images.githubusercontent.com/86667443/138536002-5fd2edd0-11ec-4c60-b3b7-be012b615976.png">
 
 ### Contributors: [Mary Beth Hunter](https://github.com/marybethhunter)

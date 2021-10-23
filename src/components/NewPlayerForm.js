@@ -69,7 +69,6 @@ export default function NewPlayerForm({
 
   useEffect(() => {
     let isMounted = true;
-
     if (player.firebaseKey) {
       if (isMounted) {
         setFormInput({

@@ -14,7 +14,7 @@ const WelcomeStyle = styled.h1`
 const DivStyle = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 440px;
+  margin-top: 300px;
   color: #d3bc8d;
 `;
 

@@ -1,82 +1,67 @@
-# React Template
-[![Netlify Status](https://api.netlify.com/api/v1/badges/339c4ae9-fc7f-41b4-9b49-2dab0a20eaba/deploy-status)](https://app.netlify.com/sites/react-template-21/deploys)
+# Sports Roster App! [![Netlify Status](https://api.netlify.com/api/v1/badges/2dc2b074-98a6-420a-90d9-7becceca6b08/deploy-status)](https://app.netlify.com/sites/mbh-team-roster/deploys)
 
-[See Live Demo of this Template](https://react-template-21.netlify.app/)
+<img width="929" alt="2021-10-22 (1)" src="https://user-images.githubusercontent.com/86667443/138535975-1dc16563-d814-46e8-841e-3fa852cb376d.png">
 
-This template includes all the dependencies and set up needed for you to work within defined code standards and structure to get you up and running quickly.
+## [View Site](https://mbh-team-roster.netlify.app/)
+## Get Started:
 
-## Topics
-- [Get Started](#get-started)
-- [Starting the Project](#starting-the-project)
-- [Other important tidbits](#other-important-tidbits)
-    - [React Dev Tools](#react-dev-tools)
-    - [Using axios](#using-axios)
-    - [Deploying on Netlify](#deploying-on-netlify)
-___
-
-## Get Started
-### Use Template
-#### 1. To get started, click the GREEN "Use this Template" button at the top of the repo
-![Use this Template](./documentation/usetemplate.png)
-
-#### 2. Make sure YOUR github account is selected in the dropdown and name your project
-![Create Project](./documentation/createproject.png)
-
-3. Clone your new repo to your local machine
-4. Go to the **NEXT** section
-
-## Starting the Project
-1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name
-1. Open the `/public/index.html` file and change the `title` attribute to the name of your application
-1. Rename the `.env.local.sample` file to `.env.local` file. The final file name should be `.env.local`
-1. From your command line, be in the root directory and run `npm install` OR `npm i` for short
-1. From your command line, be in the root directory and run `npx husky install`
-1. To start your application, run `npm start`
-
-### If you see this, you are set to go!
-![LIT](./documentation/lit-screen.png)
-
-**NOTES:** 
-- Changes you make to the project will make the browser reload on save...no more hard refresh unless something goes wrong.
-
-## Other Important Tidbits
-### React Dev Tools
-From this time forward, you will be expected to have a clean console in order for your assignments to be approved. Use [React Developer Tools Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) to help with debugging.
-### Including Images with React
-If you have a folder of local images that you want to load into your code things get a little strange with webpack.  Remember the only way webpack knows about assets is if they are imported into your javascript files.  Even our CSS is not added until those files are imported into our javascript files.  Below is some sample code for how to load a local image file into your project
-
-```js
-import cat from './assets/cat.jpg';
-
-<>
-  <img src=${cat} alt="picture of a cat"/>
-</>
-
-```
-### Using Axios
-> For every file you will need to make an API request in, you will need to import Axios
-```js
-import axios from 'axios';
-
-const examplePromise = () => {
-  axios.get('http://localhost:3001/example')
-    .then((data) => {
-      console.warn(data);
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-});
+```javascript
+ $ git clone git@github.com:marybethhunter/Team-Roster.git
+ $ cd Team-Roster
 ```
 
-### Deploying on Netlify
+## About the User
+* This app was created for a user who needs a way to keep up with all of their favorite New Orleans Saints players. 
 
-- Build Command: `yarn build`
-- Publish directory: `build`
-- **Add Environmental Variables (NOT REQUIRED for Apps that do not use API Keys, etc)**
-    - Any Enviromental variables you are using in your `.env.local` file should be added to Netlify. 
-        - Go to Site settings > Build & deploy > Environment > Environment variables and the keys and values there.
-- **Update Firebase URL Settings**
-    - In Firebase under Authentication select sign in methods, scroll to Authorized domains. Add your Netlify URL.
-# Your own learning
-If you are interested in setting up your own project for things outside of class, you can run the command to start a React project `npx create-react-app {APP_NAME}` and setup all the files and structures from scratch.
+
+## Features: 
+#### **CRUD**: 
+* The user can create, read, update, and delete all players. 
+* The same form is used to create and update players.
+#### **Authentication**: 
+* All users will have to log in to the app with Google. Users will only be able to CRUD on their own players.
+
+### [Loom video walkthrough](https://www.loom.com/share/1ec491fdd74645e79246134ebc69f609)
+
+## Relevant Links:
+* [Flow Chart](https://docs.google.com/presentation/d/1rBTACDbwz0VCCZZGPJUCMzEwH91miYVK1eDuByUlTZQ/edit#slide=id.p)
+* [ERD](https://dbdiagram.io/d/616e1ca86239e146477691a2)
+
+## Technology Used:
+* React
+* Reactstrap
+* Javascript
+* Styled Components
+* Firebase
+* Axios
+* Netlify
+* Postman
+
+## Code Snippets:
+
+```javascript
+    useEffect(() => {
+      let isMounted = true;
+      if (player.firebaseKey) {
+        if (isMounted) {
+          setFormInput({
+            name: player.name,
+            firebaseKey: player.firebaseKey,
+            imageURL: player.imageURL,
+            position: player.position,
+            uid: player.uid,
+          });
+        }
+      }
+      return () => {
+        isMounted = false;
+      };
+    }, [player]);
+```
+
+## Screenshots:
+
+<img width="929" alt="2021-10-22 (2)" src="https://user-images.githubusercontent.com/86667443/138535981-adf4fdac-f1c0-41a6-ac69-2b58f6d3e5a6.png">
+<img width="942" alt="newplayerform" src="https://user-images.githubusercontent.com/86667443/138536002-5fd2edd0-11ec-4c60-b3b7-be012b615976.png">
+
+### Contributors: [Mary Beth Hunter](https://github.com/marybethhunter)

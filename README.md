@@ -24,7 +24,7 @@
 ### [Loom video walkthrough](https://www.loom.com/share/1ec491fdd74645e79246134ebc69f609)
 
 ## Relevant Links:
-* [Flow Chart](https://docs.google.com/presentation/d/1rBTACDbwz0VCCZZGPJUCMzEwH91miYVK1eDuByUlTZQ/edit?usp=sharing)
+* [Flow Chart](https://docs.google.com/presentation/d/1Bd_PH2XEeh6fUnBtABcfzfGlzP6y4eiIbFxtjlboDOc/edit?usp=sharing)
 * [ERD](https://dbdiagram.io/d/616e1ca86239e146477691a2)
 
 ## Technology Used:

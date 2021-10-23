@@ -1,4 +1,4 @@
-# Sports Roster App! [![Netlify Status](https://api.netlify.com/api/v1/badges/2dc2b074-98a6-420a-90d9-7becceca6b08/deploy-status)](https://app.netlify.com/sites/mbh-team-roster/deploys)
+# Team Roster App! [![Netlify Status](https://api.netlify.com/api/v1/badges/2dc2b074-98a6-420a-90d9-7becceca6b08/deploy-status)](https://app.netlify.com/sites/mbh-team-roster/deploys)
 
 <img width="929" alt="2021-10-22 (1)" src="https://user-images.githubusercontent.com/86667443/138535975-1dc16563-d814-46e8-841e-3fa852cb376d.png">
 

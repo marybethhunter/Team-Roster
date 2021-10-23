@@ -12,11 +12,23 @@ const DivStyle = styled.div`
 `;
 
 const ButtonStyle = styled.button`
-  margin: 2px;
+  margin: 1px;
   border-radius: 5px;
-  background-color: white;
+  background-color: #d3bc8da8;
   color: black;
-  border: 2px solid #d3bc8d;
+  border: 2px solid black;
+  font-size: 16px;
+  margin-bottom: 5px;
+`;
+
+const TextAndBtnStyle = styled.div`
+  margin-top: 170px;
+  background-color: rgba(0, 0, 0, 0.37);
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+  font-weight: bold;
+  border: black 2px solid;
 `;
 
 export default function PlayerCard({
@@ -46,25 +58,33 @@ export default function PlayerCard({
   return (
     <>
       <DivStyle>
-        <Card inverse>
-          <CardImg width="100%" src={player.imageURL} alt={player.name} />
-          <CardImgOverlay>
-            <CardTitle tag="h5">{player.name}</CardTitle>
-            <CardText>{player.position}</CardText>
-            <ButtonStyle
-              type="button"
-              className="btn"
-              onClick={() => handleClick('update')}
-            >
-              Update Player
-            </ButtonStyle>
-            <ButtonStyle
-              type="button"
-              className="btn"
-              onClick={() => handleClick('delete')}
-            >
-              Delete Player
-            </ButtonStyle>
+        <Card variant="primary" className="card-style" inverse>
+          <CardImg
+            variant="primary"
+            className="image-style"
+            width="100%"
+            src={player.imageURL}
+            alt={player.name}
+          />
+          <CardImgOverlay variant="primary" className="image-overlay-style">
+            <TextAndBtnStyle>
+              <CardTitle tag="h5">{player.name}</CardTitle>
+              <CardText>{player.position}</CardText>
+              <ButtonStyle
+                type="button"
+                className="btn"
+                onClick={() => handleClick('update')}
+              >
+                Update Player
+              </ButtonStyle>
+              <ButtonStyle
+                type="button"
+                className="btn"
+                onClick={() => handleClick('delete')}
+              >
+                Delete Player
+              </ButtonStyle>
+            </TextAndBtnStyle>
           </CardImgOverlay>
         </Card>
       </DivStyle>

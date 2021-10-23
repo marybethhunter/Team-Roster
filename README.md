@@ -21,7 +21,7 @@
 #### **Authentication**: 
 * All users will have to log in to the app with Google. Users will only be able to CRUD on their own players.
 
-### [Loom video walkthrough](https://www.loom.com/share/1ec491fdd74645e79246134ebc69f609)
+### [Loom video walkthrough](https://www.loom.com/share/a8b1c2f36b6041a1a3a1be70e8343e02)
 
 ## Relevant Links:
 * [Flow Chart](https://docs.google.com/presentation/d/1Bd_PH2XEeh6fUnBtABcfzfGlzP6y4eiIbFxtjlboDOc/edit?usp=sharing)

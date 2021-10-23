@@ -4,17 +4,10 @@ import styled from 'styled-components';
 import { Jumbotron, Container } from 'reactstrap';
 import { signInUser } from '../api/auth';
 
-const WelcomeStyle = styled.h1`
-  color: #d3bc8d;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-`;
-
 const DivStyle = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 275px;
   color: #d3bc8d;
 `;
 
@@ -28,7 +21,13 @@ export default function SignIn({ user }) {
   return (
     <>
       {user === null ? (
-        <WelcomeStyle>Loading...</WelcomeStyle>
+        <DivStyle>
+          <Jumbotron fluid>
+            <Container fluid>
+              <h1 className="display-3">Loading...</h1>
+            </Container>
+          </Jumbotron>
+        </DivStyle>
       ) : (
         <DivStyle>
           <Jumbotron fluid>
